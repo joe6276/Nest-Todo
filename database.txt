@@ -1,0 +1,29 @@
+npm i sqlite3
+type:'sqlite',
+    database:'db.sqlite',
+    entities:[Todo],
+    synchronize:true
+npm i mssql --save
+MSSQL 
+  type:'mssql',
+    host:'localhost',
+    port:1433,
+    username: 'sa',
+    password:'Amazing@22',
+    database:'MyTestDB',
+    synchronize:true,
+    entities:[Todo],
+    extra:{
+      trustServerCertificate: true,
+    }
+npm i postgres --save
+  POSTGRES
+    type:'postgres',
+    username:'postgres',
+    password:'1234',
+    database:'testing2',
+    host:'localhost',
+    port:5432,
+    schema: 'public', 
+    synchronize:true,
+    entities:[Todo],
