@@ -12,11 +12,11 @@ Content-Type: application/json
 
 ### Get one Todo
 
-GET http://localhost:3000/todo/34
+GET http://localhost:3000/todo/33
 
 
 ### Update Todo
-PATCH http://localhost:3000/todo/2
+PATCH http://localhost:3000/todo/354
 Content-Type: application/json
 
 {

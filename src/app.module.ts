@@ -7,10 +7,17 @@ import { TodoModule } from './todo/todo.module';
 
 @Module({
   imports: [TodoModule,TypeOrmModule.forRoot({
-    type:'sqlite',
-    database:'db.sqlite',
+     type:'mssql',
+    host:'localhost',
+    port:1433,
+    username: 'sa',
+    password:'Amazing@22',
+    database:'MyTestDB',
+    synchronize:true,
     entities:[Todo],
-    synchronize:true
+    extra:{
+      trustServerCertificate: true,
+    }
   })],
   controllers: [AppController],
   providers: [AppService],
